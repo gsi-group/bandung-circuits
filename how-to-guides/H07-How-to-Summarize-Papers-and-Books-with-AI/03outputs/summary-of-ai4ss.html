@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI for Social Science — Reclaiming Research Sovereignty in the Age of Artificial Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf8f5;
+    --surface: #ffffff;
+    --text: #1c1c1c;
+    --text-muted: #5c5c5c;
+    --text-subtle: #8a8a8a;
+    --accent: #b5343a;
+    --accent-soft: #d4a0a3;
+    --border: #e0dcd5;
+    --border-light: #ede9e2;
+    --callout-bg: #f5f1eb;
+    --callout-border: #d6cfc0;
+    --badge-bg: #fdf2f2;
+    --badge-text: #b5343a;
+    --toc-width: 260px;
+    --content-max: 720px;
+    --header-height: 56px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-height) + 2rem);
+  }
+
+  body {
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    line-height: 1.75;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Progress Bar ── */
+  #progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    background: var(--accent);
+    z-index: 1000;
+    width: 0%;
+    transition: width 0.1s linear;
+  }
+
+  /* ── Header ── */
+  #site-header {
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    height: var(--header-height);
+    background: rgba(250,248,245,0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-light);
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* ── Layout ── */
+  #layout {
+    display: flex;
+    max-width: calc(var(--content-max) + var(--toc-width) + 6rem);
+    margin: 0 auto;
+    padding: 3rem 2rem 6rem;
+    gap: 4rem;
+  }
+
+  /* ── TOC ── */
+  #toc-column {
+    width: var(--toc-width);
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  #toc-nav {
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+    font-family: 'Inter', -apple-system, sans-serif;
+  }
+
+  #toc-nav h2 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-subtle);
+    margin-bottom: 1rem;
+  }
+
+  #toc-nav ol {
+    list-style: none;
+    border-left: 1px solid var(--border-light);
+  }
+
+  #toc-nav li { position: relative; }
+
+  #toc-nav a {
+    display: block;
+    padding: 0.35rem 0 0.35rem 1rem;
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    text-decoration: none;
+    line-height: 1.4;
+    transition: color 0.2s, border-color 0.2s;
+    border-left: 2px solid transparent;
+    margin-left: -1px;
+  }
+
+  #toc-nav a:hover { color: var(--text); }
+  #toc-nav a.active {
+    color: var(--accent);
+    border-left-color: var(--accent);
+    font-weight: 500;
+  }
+
+  #toc-nav .toc-sub { padding-left: 0.75rem; }
+  #toc-nav .toc-sub a { font-size: 0.72rem; color: var(--text-subtle); }
+
+  /* ── Main Content ── */
+  #content { flex: 1; min-width: 0; }
+
+  /* ── Title Area ── */
+  .title-area { margin-bottom: 3rem; }
+
+  .title-area .overline {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+
+  .title-area h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--text);
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .title-area .subtitle {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-muted);
+  }
+
+  .title-area .meta {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.78rem;
+    color: var(--text-subtle);
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .title-area .meta span { display: flex; align-items: center; gap: 0.35rem; }
+
+  /* ── Helicopter View ── */
+  .helicopter-view {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2rem 2.2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+
+  .helicopter-view h2 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .helicopter-view p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text);
+  }
+  .helicopter-view p + p { margin-top: 1rem; }
+
+  /* ── Sections ── */
+  section { margin-bottom: 3.5rem; }
+
+  section h2 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  section h2 .section-num {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--accent);
+    background: var(--badge-bg);
+    padding: 0.15em 0.5em;
+    border-radius: 3px;
+  }
+
+  section h2 .toggle-icon {
+    margin-left: auto;
+    font-size: 0.85rem;
+    color: var(--text-subtle);
+    transition: transform 0.3s;
+  }
+
+  section.collapsed .toggle-icon { transform: rotate(-90deg); }
+  section.collapsed .section-body { display: none; }
+
+  section h3 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 2rem 0 0.6rem;
+    letter-spacing: -0.01em;
+  }
+
+  section p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  section p strong {
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+
+  section p em {
+    font-style: italic;
+    color: var(--text-muted);
+  }
+
+  /* ── Callout Boxes ── */
+  .callout {
+    background: var(--callout-bg);
+    border-left: 3px solid var(--callout-border);
+    padding: 1.2rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .callout strong:first-child {
+    display: block;
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+  }
+
+  /* ── Badges ── */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 0.2em 0.65em;
+    border-radius: 3px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin: 0 0.15rem;
+  }
+
+  .badge-risk { background: #fef2f2; color: #b5343a; }
+  .badge-structural { background: #fff7ed; color: #c2410c; }
+  .badge-capability { background: #f0f9ff; color: #0369a1; }
+
+  /* ── Quote ── */
+  blockquote.pull {
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    margin: 2.5rem 0;
+    border: none;
+    position: relative;
+    quotes: none;
+  }
+
+  blockquote.pull::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: var(--accent-soft);
+    margin: 0 auto 1.2rem;
+  }
+
+  /* ── Four Contradictions Grid ── */
+  .contradictions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  .contradiction-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 1.3rem 1.4rem;
+  }
+
+  .contradiction-card .card-label {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.4rem;
+  }
+
+  .contradiction-card h4 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+
+  .contradiction-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    text-align: left;
+  }
+
+  /* ── Architecture Diagram ── */
+  .arch-diagram {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .arch-diagram .arch-title {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-subtle);
+    margin-bottom: 1.5rem;
+  }
+
+  .arch-row {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+  }
+
+  .arch-box {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text-muted);
+  }
+
+  .arch-box.core {
+    background: #fdf2f2;
+    border-color: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .arch-arrow {
+    color: var(--text-subtle);
+    font-size: 1rem;
+  }
+
+  /* ── Four Domains Grid ── */
+  .domains-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .domain-card {
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 1.3rem 1.4rem;
+    border-top: 3px solid var(--border);
+    background: var(--surface);
+  }
+
+  .domain-card:nth-child(1) { border-top-color: #0369a1; }
+  .domain-card:nth-child(2) { border-top-color: #b5343a; }
+  .domain-card:nth-child(3) { border-top-color: #ca8a04; }
+  .domain-card:nth-child(4) { border-top-color: #7c3aed; }
+
+  .domain-card .domain-num {
+    font-family: 'JetBrains Mono', 'SF Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--text-subtle);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .domain-card h4 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0.3rem 0 0.5rem;
+  }
+
+  .domain-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    text-align: left;
+  }
+
+  /* ── Stats Strip ── */
+  .stats-strip {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+    flex-wrap: wrap;
+  }
+
+  .stat-item {
+    text-align: center;
+  }
+
+  .stat-item .stat-num {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--accent);
+    display: block;
+    line-height: 1;
+  }
+
+  .stat-item .stat-label {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.68rem;
+    font-weight: 500;
+    color: var(--text-subtle);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-top: 0.3rem;
+  }
+
+  /* ── Footer ── */
+  footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  footer p {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 0.72rem;
+    color: var(--text-subtle);
+    line-height: 1.6;
+  }
+
+  footer p + p { margin-top: 0.5rem; }
+
+  /* ── Responsive ── */
+  @media (max-width: 1100px) {
+    #layout {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    #toc-column {
+      width: 100%;
+      position: relative;
+    }
+
+    #toc-nav {
+      position: static;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 1rem;
+    }
+
+    #toc-nav h2 { display: none; }
+    #toc-nav ol { display: flex; flex-wrap: wrap; gap: 0.25rem; border-left: none; }
+
+    #toc-nav a {
+      font-size: 0.72rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 3px;
+      border-left: none;
+      margin-left: 0;
+    }
+
+    #toc-nav a.active { background: var(--badge-bg); border-left: none; }
+    #toc-nav .toc-sub { display: none; }
+
+    .contradictions-grid,
+    .domains-grid { grid-template-columns: 1fr; }
+
+    .title-area h1 { font-size: 2rem; }
+  }
+
+  @media (max-width: 600px) {
+    #layout { padding: 1.5rem 1rem 3rem; }
+    #site-header { padding: 0 1rem; font-size: 0.7rem; }
+    .title-area h1 { font-size: 1.6rem; }
+    .helicopter-view { padding: 1.3rem; }
+    body { font-size: 1.1rem; }
+    .callout { padding: 1rem 1.2rem; }
+  }
+
+  /* ── Print ── */
+  @media print {
+    #toc-column, #progress-bar, #site-header { display: none; }
+    #layout { display: block; max-width: 100%; padding: 0; }
+    body { font-size: 11pt; background: white; }
+    section.collapsed .section-body { display: block !important; }
+  }
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<header id="site-header">
+  Global South Insights &amp; Tricontinental: Institute for Social Research
+</header>
+
+<div id="layout">
+
+  <!-- ── TOC ── -->
+  <aside id="toc-column">
+    <nav id="toc-nav">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#helicopter-view">Helicopter View</a></li>
+        <li><a href="#sec-1">1. Crisis of Social Science Research</a></li>
+        <li class="toc-sub"><a href="#sec-1-1">Bandwidth Paradox</a></li>
+        <li class="toc-sub"><a href="#sec-1-2">Rigour Gap</a></li>
+        <li class="toc-sub"><a href="#sec-1-3">Disciplinary Archipelago</a></li>
+        <li class="toc-sub"><a href="#sec-1-4">Labour Inversion</a></li>
+        <li><a href="#sec-2">2. Ontological Foundation of AI4SS</a></li>
+        <li class="toc-sub"><a href="#sec-2-1">Trustworthy Infrastructure</a></li>
+        <li class="toc-sub"><a href="#sec-2-2">Full-Data Perception</a></li>
+        <li class="toc-sub"><a href="#sec-2-3">Full-Dimensional Analysis</a></li>
+        <li class="toc-sub"><a href="#sec-2-4">Full-Channel Output</a></li>
+        <li class="toc-sub"><a href="#sec-2-5">Full-Disciplinary Synergy</a></li>
+        <li class="toc-sub"><a href="#sec-2-6">Human-in-the-Loop</a></li>
+        <li><a href="#sec-3">3. Technical Architecture</a></li>
+        <li class="toc-sub"><a href="#sec-3-1">Intelligent Runtime</a></li>
+        <li class="toc-sub"><a href="#sec-3-2">Multimodal RAG Lake</a></li>
+        <li class="toc-sub"><a href="#sec-3-3">Four Domains</a></li>
+        <li><a href="#sec-4">4. Applications of AI4SS</a></li>
+        <li class="toc-sub"><a href="#sec-4-1">Meta-RAG</a></li>
+        <li class="toc-sub"><a href="#sec-4-2">Digital Sovereignty Index</a></li>
+        <li class="toc-sub"><a href="#sec-4-3">Country Studies System</a></li>
+        <li class="toc-sub"><a href="#sec-4-4">Rapid Exploration</a></li>
+        <li><a href="#sec-5">5. Implications for the Global South</a></li>
+        <li><a href="#sec-6">6. Conclusion</a></li>
+      </ol>
+    </nav>
+  </aside>
+
+  <!-- ── Content ── -->
+  <main id="content">
+
+    <!-- Title -->
+    <div class="title-area">
+      <div class="overline">Studies in the Digital Landscape, no. 1 &middot; Summary</div>
+      <h1>AI for Social Science: Reclaiming Research Sovereignty in the Age of Artificial Intelligence</h1>
+      <p class="subtitle">A study from Global South Insights and Tricontinental: Institute for Social Research</p>
+      <div class="meta">
+        <span>&#128218; Long-form Academic Summary</span>
+        <span>&#128197; May 2026</span>
+        <span>&#9202; ~18 min read</span>
+      </div>
+    </div>
+
+    <!-- Helicopter View -->
+    <div class="helicopter-view" id="helicopter-view">
+      <h2>Helicopter View</h2>
+      <p>This study, produced by Global South Insights (GSI) — a research initiative within Tricontinental: Institute for Social Research — presents <strong>AI4SS (AI for Social Science)</strong>, a comprehensive framework for harnessing artificial intelligence to strengthen, rather than supplant, the intellectual labour of social scientists working on problems that matter to the Global South. The authors position their work between naïve techno-optimism and reflexive technophobia, arguing that AI can be redirected to serve the research agendas of scholars in Africa, Asia, and Latin America — but only if it is embedded within a purpose-built infrastructure that prioritises trustworthiness, human oversight, and epistemic sovereignty.</p>
+      <p>The study is organised in six parts. It opens by diagnosing four structural contradictions that afflict contemporary social science research. It then proposes an ontological reconceptualisation structured as <em>"One Foundation, Four Pillars, One Core,"</em> followed by a technical architecture described as <em>"One Core, Three Repositories, Four Domains."</em> Four concrete applications demonstrate the framework's viability, after which the authors reflect on broader implications for epistemic sovereignty, capacity multiplication, cross-border collaboration, and critical vigilance. The study concludes with a call for a decolonised research paradigm in which Global South researchers become active participants in shaping the AI age rather than passive recipients of Northern-designed technologies.</p>
+    </div>
+
+    <!-- Section 1 -->
+    <section id="sec-1">
+      <h2>
+        <span class="section-num">§ 1</span>
+        The Crisis of Social Science Research in the Data Age
+        <span class="toggle-icon">▾</span>
+      </h2>
+      <div class="section-body">
+      <p>The authors identify four structural contradictions that define the current predicament of social science research, particularly for scholars in under-resourced institutions across the Global South.</p>
+
+      <div class="contradictions-grid">
+        <div class="contradiction-card">
+          <div class="card-label">Contradiction 1</div>
+          <h4>Bandwidth Paradox</h4>
+          <p>Data abundance collides with cognitive limits. Researchers resort to sampling and abstraction, losing either breadth or depth — comprehensiveness and granularity seem mutually exclusive.</p>
+        </div>
+        <div class="contradiction-card">
+          <div class="card-label">Contradiction 2</div>
+          <h4>Rigour Gap</h4>
+          <p>LLMs generate plausible-sounding but factually incorrect statements. Over half of ChatGPT's citations are fabricated. Academic rigour demands verifiable evidence, not probabilistic fluency.</p>
+        </div>
+        <div class="contradiction-card">
+          <div class="card-label">Contradiction 3</div>
+          <h4>Disciplinary Archipelago</h4>
+          <p>Isolated disciplines speak different methodological languages with incompatible tools. Integration is imperative but practically impossible without technical infrastructure for interoperability.</p>
+        </div>
+        <div class="contradiction-card">
+          <div class="card-label">Contradiction 4</div>
+          <h4>Labour Inversion</h4>
+          <p>Researchers spend their time on mechanical toil — formatting, cleaning, searching — while machines are used for thinking. The rational division of labour is inverted.</p>
+        </div>
+      </div>
+
+      <h3 id="sec-1-1">1.1 The Bandwidth Paradox: Data Abundance Versus Cognitive Limits</h3>
+      <p>A fundamental collision exists between the explosive growth of available data and the biological constraints of human cognition. The authors illustrate this through the example of a researcher studying extractive industries in West Africa: relevant materials exist across multiple languages, formats, and jurisdictions, and the total volume far exceeds what any individual or team could read, let alone analyse. Researchers have traditionally responded through <strong>sampling</strong> (selecting a manageable subset of data) and <strong>abstraction</strong> (reducing complexity through categorisation and coding). Both strategies are legitimate but entail significant losses — potentially crucial evidence may be excluded, and the granular texture of social reality is smoothed away. The result is a reductionist imperative built into the foundations of social science methodology: researchers simplify not because they prefer to, but because human cognitive bandwidth — what Herbert Simon termed "bounded rationality" — forces them to. The possibility of achieving both comprehensiveness and granularity simultaneously has seemed foreclosed.</p>
+
+      <h3 id="sec-1-2">1.2 The Rigour Gap: Generative Fuzziness Versus Computational Precision</h3>
+      <p>General-purpose large language models have rapidly penetrated academic practice but suffer from fundamental limitations that render them problematic for serious scholarly work. Chief among these is <strong>hallucination</strong>: the tendency to generate plausible-sounding but factually incorrect statements. Research shows over half of ChatGPT's academic citations are fabricated, and even GPT-4 exhibits an 18% fabrication rate. These failures are not bugs but features intrinsic to the probabilistic architecture of language models — they are trained to predict likely word sequences, not to ascertain truth.</p>
+
+      <div class="callout">
+        <strong>Key Critique</strong>
+        Language models produce text that <em>sounds</em> right rather than text that <em>is</em> right. Bridging this gap requires fundamentally different architectures — systems that can integrate the fluency of language models with the rigour of computational methods and the accountability of evidence-based reasoning. <span class="badge badge-risk">Hallucination Risk</span>
+      </div>
+
+      <h3 id="sec-1-3">1.3 The Disciplinary Archipelago: Methodological Isolation Versus Interdisciplinary Imperatives</h3>
+      <p>The social sciences have long been divided into distinct disciplines (economics, sociology, political science, anthropology, history), each with its own theoretical traditions and methodological conventions. This creates what the authors call a <strong>Methodological Archipelago</strong>: isolated islands speaking different languages and employing different techniques, with limited communication between them. The authors illustrate this through the challenge of assessing a Global South country's development strategy, showing how an economist, political scientist, sociologist, and historian would each capture only a partial dimension. Complete judgement requires integration, but disciplinary structures impede it. The problem is not merely intellectual but practical: different disciplines use incompatible software, data formats, and analytical protocols. What is needed is not the abolition of disciplinary specialisation but its transcendence through <strong>methodological interoperability</strong> — technical infrastructure that enables different methodological traditions to communicate.</p>
+
+      <h3 id="sec-1-4">1.4 The Labour Inversion: Mechanical Toil Versus Intellectual Creation</h3>
+      <p>The fourth contradiction concerns the allocation of research labour. Working social scientists spend the bulk of their time on low-value mechanical tasks — formatting citations, cleaning datasets, searching for literature, navigating bureaucratic systems — while high-value intellectual labour (theoretical construction, interpretive insight, genuinely new ideas) is squeezed into the remaining hours. This inversion is especially damaging in the Global South, where researchers lack the institutional support their Northern counterparts enjoy. Quoting Norbert Wiener's <em>The Human Use of Human Beings</em> (1950), the authors argue a rational division of labour would assign to machines what machines do best and reserve for humans what humans do best. Instead, the current situation inverts this: machines (which often hallucinate) are used for thinking, while humans perform the drudgery that machines could handle.</p>
+
+      <div class="callout">
+        <strong>Structural Irony</strong>
+        <span class="badge badge-structural">Systemic</span> The current AI landscape represents a perverse inversion of value: machines — which excel at repetitive operations, pattern matching, and format conversion — are deployed for creative generation (where they hallucinate), while human researchers — who excel at judgement, interpretation, and contextual understanding — are consigned to mechanical drudgery.
+      </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="sec-2">
+      <h2>
+        <span class="section-num">§ 2</span>
+        Towards a New Paradigm: The Ontological Foundation of AI4SS
+        <span class="toggle-icon">▾</span>
+      </h2>
+      <div class="section-body">
+      <p>The contradictions described above are not inevitable features of the human condition but historical products of specific technological and institutional configurations. The AI4SS framework represents an attempt to reconceptualise the fundamental categories of social science research in light of what AI now makes possible. This reconceptualisation operates at the <strong>ontological level</strong> — it concerns the very nature of research itself, including the relationships among researcher, data, method, and output.</p>
+
+      <p>The ontological foundation is organised as a three-tiered structure: <strong>"One Foundation, Four Pillars, One Core."</strong></p>
+
+      <div class="arch-diagram">
+        <div class="arch-title">Ontological Architecture</div>
+        <div style="margin-bottom:0.75rem;">
+          <span class="arch-box core">Human-in-the-Loop</span>
+          <span style="display:block;font-family:'Inter',sans-serif;font-size:0.65rem;color:var(--text-subtle);margin-top:0.35rem;">The Core</span>
+        </div>
+        <div class="arch-row" style="margin-bottom:0.5rem;">
+          <span class="arch-box">Full-Data Perception</span>
+          <span class="arch-box">Full-Dimensional Analysis</span>
+          <span class="arch-box">Full-Channel Output</span>
+          <span class="arch-box">Full-Disciplinary Synergy</span>
+        </div>
+        <div style="font-family:'Inter',sans-serif;font-size:0.65rem;color:var(--text-subtle);margin-bottom:1rem;">The Four Pillars</div>
+        <div>
+          <span class="arch-box" style="font-weight:600;">Trustworthy Infrastructure</span>
+          <span style="display:block;font-family:'Inter',sans-serif;font-size:0.65rem;color:var(--text-subtle);margin-top:0.35rem;">The Foundation</span>
+        </div>
+      </div>
+
+      <h3 id="sec-2-1">2.1 The Foundation: Trustworthy Infrastructure</h3>
+      <p>The hallucination phenomenon in general-purpose AI is not a software defect but an architectural feature intrinsic to probabilistic language generation. Addressing it requires not better models but <strong>system-level constraint architectures</strong>. AI4SS's trustworthy infrastructure ensures: predictable and auditable execution paths (the system operates along predetermined tracks, every intermediate step can be inspected); full evidential traceability (every assertion traces to its original source); separation of content production from quality verification (the agent that generates cannot review its own output); and multi-source cross-validation for critical conclusions. Without this foundation, the four pillars above it would simply produce errors with greater efficiency and scale. Capability and trustworthiness must be built in tandem.</p>
+
+      <div class="callout">
+        <strong>Architectural Principle</strong>
+        This is what distinguishes AI4SS from general-purpose AI tools. It is not a more intelligent chatbot; it is a <strong>trustworthy research infrastructure</strong> — a system designed from the outset with academic standards as its binding constraints.
+      </div>
+
+      <h3 id="sec-2-2">2.2 Full-Data Perception: Expanding the Cognitive Horizon</h3>
+      <p>The first pillar responds to the bandwidth paradox by transforming the relationship between researcher and data along three axes. First, <strong>data ownership and access</strong>: the construction of "Institutional Cognitive Moats" — secure repositories of high-value data assets that become cumulative knowledge bases compounding in value over time. Second, <strong>format integration</strong>: advances in multimodal AI now enable processing text, image, audio, and video within unified analytical frameworks. Third, <strong>language</strong>: semantic alignment technologies based on vector embeddings enable mapping texts in different languages into a common semantic space, making the language barrier permeable. Full-Data Perception establishes a new relationship between the researcher and the totality of relevant information — one in which cognitive bandwidth limitations are overcome through technological augmentation while granularity and contextual richness are preserved.</p>
+
+      <h3 id="sec-2-3">2.3 Full-Dimensional Analysis: Against Reductionism</h3>
+      <p>The second pillar addresses the reductionist imperative through several interconnected capabilities. <strong>Exhaustive Computation</strong> means processing the entirety of a dataset rather than a sample, detecting outliers and edge cases that sampling would miss. <strong>Holographic Analysis</strong> means maintaining access to original data even as higher-level patterns are identified — the ability to drill down from aggregate findings to specific instances. <strong>Iterative Feedback</strong> establishes dynamic loops between empirical material and theoretical construction. Most importantly, Full-Dimensional Analysis seeks to integrate quantitative and qualitative traditions through mutual validation — where statistical findings can be checked against qualitative evidence and qualitative interpretations tested against quantitative patterns. The goal is not to dissolve the distinction between methods but to enable their productive interaction.</p>
+
+      <h3 id="sec-2-4">2.4 Full-Channel Output: Multiple Outputs from Unified Knowledge</h3>
+      <p>The third pillar inverts the traditional relationship between research and output. Rather than producing a single canonical text that must then be translated into other formats, the researcher works with a unified knowledge base from which multiple outputs can be generated: an academic paper, a policy brief, a long-form article, a public lecture presentation, or audio/video production. Each is adapted to its audience and medium, but all draw from the same evidentiary foundation. This depends on <strong>adaptive content generation</strong> (adjusting register and vocabulary to audience), <strong>stylistic emulation</strong> (matching specific conventions of journals or publications), <strong>multimodal output</strong> (text, visualisations, graphics, potentially audio and video), and <strong>traceable provenance</strong> — what the authors call the "digital umbilical cord" linking every output back to its sources.</p>
+
+      <h3 id="sec-2-5">2.5 Full-Disciplinary Synergy: Methodological Interoperability</h3>
+      <p>The fourth pillar addresses the methodological archipelago through <strong>Capability Encapsulation</strong>: packaging disciplinary methods as modular units usable by researchers from other fields without requiring mastery of underlying technical details. At the <strong>tool level</strong>, standard protocols like the Model Context Protocol (MCP) enable heterogeneous systems to exchange data and commands in consistent formats. At the <strong>knowledge level</strong>, the skills ecosystem (such as Skills.sh) enables methodological knowledge to be packaged as one-click installable, cross-platform reusable capability units. MCP addresses how tools connect; the skills ecosystem addresses how knowledge circulates. The researcher becomes not a specialist in any single method but an <strong>orchestrator</strong> assembling multi-method workflows. This also enables <strong>Fractal Collaboration</strong>: scaling cooperative research from individual projects to large multi-institutional programmes across the Global South.</p>
+
+      <h3 id="sec-2-6">2.6 The Core: Human-in-the-Loop — Augmentation, Not Replacement</h3>
+      <p>The core of the entire framework is both a technical architecture and a philosophical commitment: AI systems should augment human intelligence rather than substitute for it. Key dimensions include: <strong>Value Anchoring</strong> — human researchers retain authority over ethical frameworks and the questions worth asking; <strong>Cognitive Sovereignty</strong> — humans retain ultimate veto power, and every AI output is a proposal subject to review, with reasoning processes made visible and evidential chains accessible.</p>
+
+      <blockquote class="pull">The machine may propose; the human disposes.</blockquote>
+
+      <p>At the same time, Human-in-the-Loop mandates automation of mechanical labour — literature search, citation formatting, data cleaning, file conversion — precisely the tasks machines can handle reliably. The ultimate goal is <strong>Re-Embedding Experience</strong>: liberating cognitive bandwidth so researchers can return to the field, the archive, and direct engagement with social realities.</p>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="sec-3">
+      <h2>
+        <span class="section-num">§ 3</span>
+        The Technical Architecture: One Core, Three Repositories, Four Domains
+        <span class="toggle-icon">▾</span>
+      </h2>
+      <div class="section-body">
+      <p>The ontological concepts must be realised in concrete technical systems. The architecture is described as <strong>"one core, three repositories, four domains,"</strong> with modularity as the key implementation principle — components are independent, connected through standard interfaces, enabling flexibility, resilience, and collaborative development.</p>
+
+      <h3 id="sec-3-1">3.1 The Intelligent Runtime ("One Core")</h3>
+      <p>The computational engine has two primary components. First, a <strong>Large Model Inference Engine</strong> providing natural language understanding, semantic analysis, and content generation — leveraging recent advances to process unstructured text at scale and understand meaning rather than merely matching keywords. Second, a <strong>Declarative Multi-Agent System Architecture</strong> formalised as <strong>POMASA</strong> (Pattern-Oriented Multi-Agent System Architecture). Rather than writing procedural code specifying exactly how tasks should be performed, POMASA enables the definition of agent blueprints — declarative specifications of what agents should accomplish, what resources they can access, and how they should interact. The combination of language model capabilities with multi-agent orchestration enables a qualitative leap: complex tasks are decomposed into subtasks handled by specialised agents, with coordinated information flow and process management. <span class="badge badge-capability">Open Source</span></p>
+
+      <h3 id="sec-3-2">3.2 The Multimodal RAG Lake ("Three Repositories")</h3>
+      <p>AI4SS operates on a multimodal Retrieval-Augmented Generation (RAG) lake comprising three repositories. The <strong>Structured Data Repository</strong> contains cleaned, validated quantitative datasets organised for computational analysis. The <strong>Unstructured Materials Repository</strong> stores original texts, images, audio, video, and other primary materials in native formats, indexed for semantic retrieval. The <strong>Process Assets Repository</strong> accumulates intermediate research products — working notes, preliminary analyses, methodological templates — enabling institutional learning. The RAG architecture ensures AI-generated outputs remain grounded in actual evidence: when the system formulates a response, it retrieves relevant materials from the repositories and grounds its generation in this retrieved context, producing outputs that are not only fluent but verifiable.</p>
+
+      <h3 id="sec-3-3">3.3 The Technical Capability Ecosystem ("Four Domains")</h3>
+      <p>The four functional domains correspond to phases of the research process, together providing a comprehensive capability architecture that supports the full lifecycle from data acquisition through analysis to publication and dissemination.</p>
+
+      <div class="domains-grid">
+        <div class="domain-card">
+          <div class="domain-num">Domain 1 &middot; Sensing</div>
+          <h4>Information Perception</h4>
+          <p>Web scraping, API access, commercial database integration, multi-format document parsing, image understanding, audio/video transcription, knowledge graph construction, data archiving with classification and access control.</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-num">Domain 2 &middot; Thinking</div>
+          <h4>Cognitive Reasoning</h4>
+          <p>Full-text indexing at multiple granularities, deep document comprehension, research planning, multi-dimensional data exploration, dynamic agent generation, statistical analysis and hypothesis testing, econometric methods, probabilistic reasoning for pattern recognition and causal inference.</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-num">Domain 3 &middot; Speaking</div>
+          <h4>Expression Rendering</h4>
+          <p>Report generation with logical structuring, data visualisation, natural-language-driven chart generation, content management with version control, multi-format typesetting, multi-channel distribution adaptation, data lineage tracking, citation management, and audit logging.</p>
+        </div>
+        <div class="domain-card">
+          <div class="domain-num">Domain 4 &middot; Regulating</div>
+          <h4>Collaborative Governance</h4>
+          <p>Team collaboration with real-time synchronisation, Git-style version control, domain knowledge encapsulation with API exposure, cross-system protocol adaptation, citation format management, automated fact-checking, bias detection, and workflow engines for review and publication.</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="sec-4">
+      <h2>
+        <span class="section-num">§ 4</span>
+        From Theory to Praxis: Applications of AI4SS
+        <span class="toggle-icon">▾</span>
+      </h2>
+      <div class="section-body">
+      <p>The authors present four representative applications, noting that GSI has developed over forty within the framework. These run on the GSI Unified Data Platform, which integrates 96 datasets from the UN, World Bank, and IMF, encompassing 41,100 indicators and 3.45 billion rows of data.</p>
+
+      <div class="stats-strip">
+        <div class="stat-item"><span class="stat-num">96</span><span class="stat-label">Datasets</span></div>
+        <div class="stat-item"><span class="stat-num">41.1k</span><span class="stat-label">Indicators</span></div>
+        <div class="stat-item"><span class="stat-num">3.45B</span><span class="stat-label">Data Rows</span></div>
+        <div class="stat-item"><span class="stat-num">40+</span><span class="stat-label">Applications</span></div>
+      </div>
+
+      <h3 id="sec-4-1">4.1 Meta-RAG: The Knowledge Infrastructure</h3>
+      <p>Meta-RAG is the flagship implementation of the multimodal RAG lake concept, described as "Research Methodology as Configuration" — the idea that research procedures can be explicitly specified, systematically implemented, and reliably repeated. It comprises over thirty atomic agents (Evaluators, Orchestrators, Validators) combinable into custom workflows with human oversight at specified checkpoints. PostgreSQL vector databases store tens of thousands of embeddings enabling semantic retrieval across modalities. A researcher can build a specialised knowledge base of thousands of high-quality documents in approximately one week at roughly $200 — work that traditionally required months. In a representative case, an African national development strategy project used Meta-RAG's "New Structural Economics Lens" workflow: the system autonomously integrated macroeconomic frameworks with sector-specific industrial policies, producing a comprehensive multi-chapter report in twenty-seven minutes at a cost of $2.91.</p>
+
+      <h3 id="sec-4-2">4.2 The Digital Sovereignty Index: Assessing Global South Autonomy</h3>
+      <p>The DSI project evaluates countries across four dimensions — data ownership, digital infrastructure, cyberspace governance, and digital capability — to produce comprehensive digital sovereignty assessments. Using the POMASA architecture with six specialised agents, agent blueprints total approximately 21,000 words and reference materials approximately 188,000 words. The evaluation methodology specifies over 5,400 individual assessment criteria under sixteen indicators. For each of the eleven BRICS nations assessed, the system collects over 700 pieces of primary evidence, deduplicates to 400–500 high-quality items, and produces structured assessment reports of 11,000–13,000 words in approximately six hours per country. External validation has been positive: an Argentine academic described the findings on Argentina's "capability paradox" as "really insightful" and "critical findings for us."</p>
+
+      <h3 id="sec-4-3">4.3 The Regional and Country Studies System</h3>
+      <p>This represents the most ambitious implementation: an end-to-end academic research production system incorporating 317 declarative agents organised into 64 pipeline orchestrations, connected to six MCP servers providing 123 tools (including paywalled journal access and optical character recognition). The quality assurance architecture includes 294 "Quality Gates" — automated checkpoints distributed across workflow layers that verify outputs and flag potential hallucinations. Research projects traditionally requiring six to twelve months can be completed in 40–60 hours of system runtime (an efficiency improvement of 100–200 times), producing reports of 40–80 pages with over 3,000 precisely formatted citations. The system has produced country studies on social governance, capital accumulation, and international dependency relations.</p>
+
+      <div class="callout">
+        <strong>Scale of Ambition</strong>
+        This is not an assistant that helps researchers write; it is a <strong>production system</strong> that can autonomously generate publication-ready research outputs from specified inputs and parameters. <span class="badge badge-capability">317 Agents</span> <span class="badge badge-risk">294 Quality Gates</span>
+      </div>
+
+      <h3 id="sec-4-4">4.4 Rapid Exploration: From Question to Insight Without Gatekeepers</h3>
+      <p>An impromptu demonstration illustrates a different dimension of AI4SS's potential. When an Indian industry expert asked about strategic contradictions in US semiconductor export controls and opportunities for the Global South, the question was fed directly into POMASA's generator tool with no additional information. Within thirty minutes, the system created a complete multi-agent research apparatus (seven specialised agents implementing fourteen architectural patterns). The system then ran autonomously for approximately two hours, curating 106,000 words of source material and producing a twelve-chapter report of 7,600 words with 122 references.</p>
+
+      <p>The critical point is that the expert could have done this himself — POMASA is open-source, the runtime environments are commercially available, and no gatekeeper's permission was required. This represents a democratisation of exploratory research: the cost of intellectual experimentation drops to near zero, a hypothesis can be probed in hours rather than months, and the researcher with the question becomes the researcher with the answer.</p>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section id="sec-5">
+      <h2>
+        <span class="section-num">§ 5</span>
+        Implications for the Global South
+        <span class="toggle-icon">▾</span>
+      </h2>
+      <div class="section-body">
+
+      <h3 id="sec-5-1">5.1 Epistemic Sovereignty</h3>
+      <p>The most fundamental implication is the capacity of Global South researchers to determine their own research agendas, develop their own analytical frameworks, and control the infrastructures through which knowledge is produced. The current global knowledge economy is profoundly asymmetric: major publishers, citation indices, and AI systems are concentrated in the North. AI4SS offers a path not to autarky but to greater autonomy within interdependence — building institutional knowledge bases from local materials, employing a theory-agnostic architecture that can operate across Marxist, liberal, realist, and other frameworks, and preserving space for intellectual traditions that differ from the globalised mainstream.</p>
+
+      <h3 id="sec-5-2">5.2 Capacity Multiplication</h3>
+      <p>AI4SS offers partial compensation for resource disparities between Northern and Southern institutions. The mechanical labour that consumes researcher time (literature review, data processing, formatting, quality control) can be largely automated. Small teams can produce outputs that previously required large institutions; individual researchers can tackle questions that demanded collaborative programmes. The authors acknowledge constraints (computing resources, stable electricity, expertise requirements) but point to demonstrated results: $200 and one week for a specialised knowledge base, six hours for a country assessment, six-to-twelve-month projects completed in 40–60 hours.</p>
+
+      <h3 id="sec-5-3">5.3 Cross-Border Collaboration</h3>
+      <p>AI4SS provides infrastructure for South-South cooperation at scale. Standardised protocols enable researchers using different tools and speaking different languages to work within integrated workflows. Shared knowledge repositories allow institutional resource pooling. The GSI Unified Data Platform's 96 datasets include 274 universal aggregation categories (BRICS nations, African Union, income groupings), enabling collaboration on a common data foundation. The vision is distributed, cooperative capacity-building — a network of Southern research capacity that collectively matches or exceeds what any Northern institution can achieve alone.</p>
+
+      <h3 id="sec-5-4">5.4 Critical Vigilance</h3>
+      <p>The authors stress that AI is not neutral — it embeds assumptions, biases, and priorities of its developers. Language models trained on Northern English-language materials may reproduce Northern perspectives. Algorithmic efficiency may sacrifice nuance. AI4SS responds through Human-in-the-Loop and engineered safeguards (294 Quality Gates, content/verification separation, evidential traceability), but mechanisms are only effective when actively wielded by critically vigilant researchers. AI systems should be treated as tools, not oracles. The authors also call attention to the political economy of AI itself: who benefits, whose interests are served, how power is redistributed.</p>
+
+      <div class="callout">
+        <strong>Critical Warning</strong>
+        The Global South should not be merely a consumer of technologies developed elsewhere but a participant in shaping the technological future. Mechanisms are only as effective as the critically vigilant researchers who wield them. <span class="badge badge-risk">Vigilance Required</span>
+      </div>
+      </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section id="sec-6">
+      <h2>
+        <span class="section-num">§ 6</span>
+        Conclusion: Towards a Decolonised Research Paradigm
+        <span class="toggle-icon">▾</span>
+      </h2>
+      <div class="section-body">
+      <p>The study concludes by summarising its three-layer contribution: an ontological reconceptualisation (One Foundation, Four Pillars, One Core), a methodological architecture (One Core, Three Repositories, Four Domains), and practical applications demonstrating viability. The path forward requires simultaneous development across all three layers — refining understanding of what AI makes possible, building and improving technical systems, and applying these systems to questions that advance the interests of Global South peoples.</p>
+
+      <p>The authors frame AI4SS not as a finished product but as a contribution to a collective endeavour, inviting researchers across the Global South to use, critique, adapt, and extend the framework. The broader stakes are significant: the contours of the AI age are still being shaped, and the Global South can be an active participant rather than a passive recipient. A decolonised research paradigm — one that harnesses technological power while preserving human agency, learns from global knowledge while serving local needs, and builds Southern capacity while fostering global solidarity — is within reach.</p>
+
+      <blockquote class="pull">The future is not determined. It is made — by choices, by struggles, by collective action.</blockquote>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>This summary was produced from <em>AI for Social Science: Reclaiming Research Sovereignty in the Age of Artificial Intelligence</em> (Studies in the Digital Landscape, no. 1), a study by Global South Insights, a research initiative of Tricontinental: Institute for Social Research.</p>
+      <p>Summary generated May 2026. The original study is available from Tricontinental: Institute for Social Research.</p>
+    </footer>
+
+  </main>
+</div>
+
+<script>
+(function() {
+  /* ── Progress Bar ── */
+  const bar = document.getElementById('progress-bar');
+  window.addEventListener('scroll', function() {
+    const h = document.documentElement;
+    const st = h.scrollTop;
+    const sh = h.scrollHeight - h.clientHeight;
+    bar.style.width = sh > 0 ? (st / sh * 100) + '%' : '0%';
+  }, {passive: true});
+
+  /* ── Active TOC Highlighting ── */
+  const tocLinks = document.querySelectorAll('#toc-nav a');
+  const sections = [];
+  tocLinks.forEach(function(a) {
+    const id = a.getAttribute('href').replace('#', '');
+    const el = document.getElementById(id);
+    if (el) sections.push({el: el, link: a});
+  });
+
+  const observer = new IntersectionObserver(function(entries) {
+    let activeId = null;
+    entries.forEach(function(e) {
+      if (e.isIntersecting) activeId = e.target.id;
+    });
+    if (activeId) {
+      tocLinks.forEach(function(a) {
+        var href = a.getAttribute('href').replace('#', '');
+        a.classList.toggle('active', href === activeId);
+      });
+    }
+  }, {rootMargin: '-10% 0px -80% 0px', threshold: 0});
+
+  sections.forEach(function(s) { observer.observe(s.el); });
+
+  /* ── Collapsible Sections ── */
+  document.querySelectorAll('section h2').forEach(function(h2) {
+    h2.addEventListener('click', function() {
+      this.closest('section').classList.toggle('collapsed');
+    });
+  });
+
+  /* ── Smooth scroll for TOC links ── */
+  tocLinks.forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      var id = this.getAttribute('href').replace('#', '');
+      var target = document.getElementById(id);
+      if (target) {
+        target.scrollIntoView({behavior: 'smooth'});
+        history.pushState(null, null, '#' + id);
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
