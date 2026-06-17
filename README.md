@@ -1,4 +1,4 @@
-# Bandung Circuit
+# Bandung Circuits
 
 A collection of AI prompt guides and worked examples — practical techniques for getting more out of AI with well-crafted prompts.
 
