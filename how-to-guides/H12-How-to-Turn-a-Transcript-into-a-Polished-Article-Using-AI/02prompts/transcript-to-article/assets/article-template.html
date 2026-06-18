@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<style>
+  :root { --ink:#1a1a1a; --muted:#555; --rule:#ddd; --accent:#7a1f1f; }
+  html { font-size: 18px; }
+  body {
+    margin: 0; color: var(--ink); background: #fff;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.65; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 4rem 1.25rem 6rem; }
+  h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 1.5rem; }
+  h2 { font-size: 1.45rem; margin: 2.6rem 0 0.8rem; }
+  h3 { font-size: 1.15rem; margin: 2rem 0 0.6rem; }
+  p { margin: 0 0 1.15rem; }
+  a { color: var(--accent); }
+  blockquote {
+    margin: 1.6rem 0; padding: 0.2rem 0 0.2rem 1.2rem;
+    border-left: 3px solid var(--accent); color: var(--muted); font-style: italic;
+  }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.6rem 0; }
+  ul, ol { margin: 0 0 1.15rem 1.4rem; }
+  li { margin: 0.3rem 0; }
+  code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.9em; }
+  em { font-style: italic; }
+  strong { font-weight: 700; }
+  .meta { color: var(--muted); font-size: 0.95rem; margin: -0.6rem 0 2.2rem; }
+  @media (max-width: 560px) { html { font-size: 17px; } .wrap { padding-top: 2.5rem; } }
+</style>
+</head>
+<body>
+  <article class="wrap">
+{{CONTENT}}
+  </article>
+</body>
+</html>
