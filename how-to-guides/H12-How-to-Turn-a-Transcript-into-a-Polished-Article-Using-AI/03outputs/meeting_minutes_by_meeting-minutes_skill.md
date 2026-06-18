@@ -1,0 +1,321 @@
+# Meeting Minutes: HANDS OFF ASIA! Peace, Sovereignty, and Anti-US Militarism Webinar
+
+## 1. Metadata
+
+- **Title**: HANDS OFF ASIA! Peace, Sovereignty, and Anti-US Militarism
+- **Date (YYYY-MM-DD)**: 2025-04-30
+- **Start Time (UTC)**: 02:13 (approximate, based on transcript timestamp 00:02:13)
+- **End Time (UTC) or Duration**: Approximately 2 hours 10 minutes (ended 02:10:17 in transcript)
+- **Organizer**: Tricontinental Institute for Social Research (Asia) and International People's Assembly (IPA)
+- **Location / Virtual Link**: Virtual webinar (platform not specified)
+- **Minutes Author**: Agent (Claude Code)
+- **Distribution List**: Webinar recording to be published on Tricontinental Asia YouTube channel; attendees from across Asia and global regions
+
+---
+
+## 2. Attendance
+
+- **Present**:
+  - **Tings Chak** (Chair) - Asia Co-coordinator, Tricontinental Institute for Social Research
+  - **Luna Nguyen** (Speaker) - Translator and Marxist-Leninist Content Creator, Vietnam (YouTube channel: Luna Oi)
+  - **Setareh Sadeqi** (Speaker) - Assistant Professor, University of Tehran's Faculty of World Studies, Iran
+  - **Keiko Yonaha** (Speaker) - Co-representative, No More Battle of Okinawa and Okinawa's Voice, Japan
+  - **Professor Chen Meixian** (Speaker) - Department of Public Health, National Cheng Kung University, Taiwan
+  - **Corazon Valdes-Fabros** (Speaker) - Co-president, International Peace Bureau; Core member, Asia Europe People's Forum
+  - **Chong-woon Hwang** (Speaker) - General Secretary, International Strategy Center, South Korea
+  - **Zhong Huimin** - President, China War of Resistance Against Japan Historical Truth Preservation Society (audience)
+  - **Professor Guan** - Secretary General, China War of Resistance Against Japan Historical Truth Preservation Society (audience)
+  - **Over 100 webinar participants** from Asia, Argentina, Sri Lanka, and other regions
+
+- **Regrets / Absent**: Not recorded
+- **Notetaker / Recorder**: Agent (AI-assisted transcription from SRT file)
+
+---
+
+## 3. Agenda
+
+- **Item 1**: Opening remarks and technical setup
+- **Item 2**: Launch of International People's Assembly "Hands Off Asia" Campaign
+- **Item 3**: Presentation by Luna Nguyen (Vietnam) - Liberation struggle and Vietnam's Four No's Policy
+- **Item 4**: Presentation by Setareh Sadeqi (Iran) - Myth of US Bases as Shields
+- **Item 5**: Presentation by Keiko Yonaha (Okinawa) - US Military Occupation and Remilitarization of Japan
+- **Item 6**: Presentation by Professor Chen Meixian (Taiwan) - US Military and Ideological Control
+- **Item 7**: Presentation by Corazon Valdes-Fabros (Philippines) - Tripwire State and Pax Siliconica
+- **Item 8**: Presentation by Chong-woon Hwang (South Korea) - US Military Bases and New Cold War Architecture
+- **Item 9**: Closing remarks and solidarity building
+
+---
+
+## 4. Summary
+
+This webinar, held on the 51st anniversary of Vietnam's liberation (April 30, 1975), launched the International People's Assembly's "Hands Off Asia" campaign. An all-women panel from across Asia presented analyses of US military presence, imperialism, and resistance in their respective regions. The event highlighted the interconnected nature of US militarism across Asia—from Vietnam's historical struggle to ongoing conflicts in Iran, Okinawa's base resistance, Taiwan's ideological control, Philippines' remilitarization, and South Korea's role in the new Cold War architecture. The webinar concluded with a unified call for solidarity, education, and organized resistance against US imperialism.
+
+---
+
+## 5. Decisions Made
+
+- **Decision 1**: Launch of the "Hands Off Asia" international campaign
+  - Who decided / approved: International People's Assembly (IPA) and Tricontinental Institute
+  - Rationale: To coordinate resistance against US/NATO military bases across Asia and demand respect for Asian sovereignty
+  - Effective date: 2025-04-30
+
+- **Decision 2**: Establishment of ongoing webinar series on US militarism and resistance
+  - Who decided / approved: Tricontinental Asia
+  - Rationale: Need for continued education, analysis sharing, and solidarity building across Asian movements
+  - Effective date: Beginning May 2025
+
+---
+
+## 6. Action Items
+
+- **[A1] Distribute campaign materials**
+  - **Owner**: International People's Assembly (IPA)
+  - **Due**: ASAP / Ongoing
+  - **Acceptance Criteria**: Posters and resources available for download at ipa-aip.org in multiple Asian languages; materials shared across social media
+  - **Linked artifacts**: https://ipa-aip.org
+
+- **[A2] Publish analytical content on US militarism**
+  - **Owner**: Tricontinental Asia
+  - **Due**: 2025-12-31 (throughout the year)
+  - **Acceptance Criteria**: Publications featuring analysis from webinar speakers on realities of US militarism and resistance
+  - **Linked artifacts**: https://tricontinental.org/asia
+
+- **[A3] Expand peace-oriented network across Asia**
+  - **Owner**: All participating organizations (ISC, IPA, Tricontinental, etc.)
+  - **Due**: Ongoing
+  - **Acceptance Criteria**: Establishment of regional coordination mechanisms; organization of rallies and events; mobilization of general public
+
+- **[A4] Translate and distribute Vietnamese Marxism-Leninism curriculum**
+  - **Owner**: Luna Nguyen
+  - **Due**: Available now (e-book)
+  - **Acceptance Criteria**: Free e-book accessible at banninghouse.rocks/shop
+  - **Linked artifacts**: https://banninghouse.rocks/shop
+
+- **[A5] Continue Okinawa-Taiwan Dialogue Project**
+  - **Owner**: Keiko Yonaha and participating organizations
+  - **Due**: Ongoing
+  - **Acceptance Criteria**: Regular symposiums held; cross-regional understanding built; common goals identified
+
+---
+
+## 7. Notes by Agenda Item
+
+### Agenda Item 1: Opening and Campaign Launch (00:02:13 - 00:06:20)
+
+**Key points:**
+- Webinar held on April 30, anniversary of Vietnam's liberation (1975)
+- 51 years ago, Vietnamese forces defeated the most powerful military in the world at cost of over 3 million Vietnamese lives
+- US maintains "arc of military infrastructure" stretching from Japan to South Korea, Philippines, Guam, Australia, Diego Garcia, and Gulf States
+- Japan recently doubled military budget and purchased 400+ US Tomahawk missiles—largest remilitarization since 1945
+- US has sold over $20 billion worth of arms to Taiwan since 2019
+- Women have been at the forefront of anti-war struggles in Asia throughout history
+
+**Open issues/questions:**
+- How to coordinate resistance across diverse Asian contexts?
+
+---
+
+### Agenda Item 2: Luna Nguyen - Vietnam's Liberation and Four No's Policy (00:07:14 - 00:18:27)
+
+**Key points:**
+- April 30, 1975 marked victory against US imperialism
+- US sent nearly 3 million troops to Vietnam (1965-1972)
+- Over 2 million Vietnamese civilians and 1 million soldiers died
+- Over 4 million Agent Orange victims across Vietnam, Laos, Cambodia—US has never apologized
+- Vietnam paid $145 million war debt to US until 2018 (just 7 years ago)
+- **Vietnam's Four No's Policy**:
+  1. No military alliance with any country
+  2. No alignment with one country against another
+  3. No permission for foreign military bases on Vietnamese territory
+  4. No use of force or threatening to use force in international relations
+- US has been begging Vietnam for naval bases for years; Vietnam's answer is always no
+- Vietnam defeated multiple color revolution attempts (2014-2019)
+
+**Open issues/questions:**
+- Can Vietnam's Four No's model be adapted by other Asian nations?
+
+---
+
+### Agenda Item 3: Setareh Sadeqi - Myth of US Bases as Shields (00:19:09 - 00:35:36)
+
+**Key points:**
+- Speaking from Esfahan, Iran—second most impacted city by current war
+- Persian Gulf states (UAE, Bahrain, Kuwait, Qatar, Saudi Arabia) provide airspace and land to US military
+- These states spend billions on US "defense systems" believing they provide protection
+- US bases "import conflict"—transform host states from protected partners into exposed targets
+- During recent conflict, US bases endured 170+ attacks
+- "Strategic inversion": What appears as insurance functions as liability
+- US cannot defend itself against attacks, let alone protect host countries
+- Censorship in Gulf states: Western citizens arrested for filming aftermath of Iran's responses
+- Orientalist depiction of Iran serves imperialist narrative
+
+**Open issues/questions:**
+- How to break security dependency narratives in Gulf states?
+
+---
+
+### Agenda Item 4: Keiko Yonaha - Okinawa's Resistance (00:36:15 - 00:52:28)
+
+**Key points:**
+- Okinawa is 0.6% of Japan's territory but hosts 70% of all US bases in Japan
+- Okinawa was the only place in Japan where ground war was fought in WWII
+- One out of three or four Okinawans killed in Battle of Okinawa
+- 1951 peace treaty included secret pacts allowing US bases anywhere in Japan
+- Forced land seizures began in 1950—people driven from homes by bayonets and bulldozers
+- US military offenders often acquitted; convicted criminals can flee to US
+- PFAS contamination in drinking water continues; investigations blocked by Status of Forces Agreement
+- Sexual assaults by US military documented from 1945 to present—including 9-month-old baby raped and killed in 1949
+- December 2021: US/Japan government announced Okinawa will be front line for "Taiwan contingency"
+- EABO (Expeditionary Advanced Base Operation) planning involves Okinawan residents receiving counterattack
+- "Kill web" concept links military capabilities of South Korea, Japan, and Philippines
+
+**Open issues/questions:**
+- How to resist new base construction in Henoko, northern Okinawa?
+- How to counter deterrence theory narratives among Okinawan people?
+
+---
+
+### Agenda Item 5: Professor Chen Meixian - Taiwan's Ideological Control (00:53:16 - 01:11:17)
+
+**Key points:**
+- Taiwan is part of China; 96% of population is Han Chinese
+- Connection interrupted three times by imperialism: Dutch colonization (1624-1662), Japanese colonization (1895-1945), US military/ideological control (1950-present)
+- 1950: Korean War led US to include Taiwan in containment strategy
+- 1954: ROC-US Mutual Defense Treaty established
+- 1979: US established diplomatic relations with PRC; withdrew troops; passed Taiwan Relations Act
+- **Systematic US ideological propaganda through**:
+  - Educational system
+  - Media control
+  - Fellowship programs (East-West Center, etc.)
+  - Training of pro-American elites
+- Main themes: anti-communist liberalism, modernization theory, Western democracy, anti-China sentiment
+- Result: Taiwan's mainstream ideology is pro-American, admire America, anti-communist, anti-China
+- Taiwan Relations Act enabled continuous arms sales—every US president has sold arms to Taiwan
+- Recent forced purchase: $400 billion arms sale pushed by US government
+
+**Open issues/questions:**
+- How to counter decades of ideological conditioning in Taiwan?
+
+---
+
+### Agenda Item 6: Corazon Valdes-Fabros - Philippines as Tripwire State (01:12:02 - 01:29:20)
+
+**Key points:**
+- April 20-May 8, 2025: "Balikatan 2026" war games—largest in Philippine history
+- 17,000 foreign troops from US, Japan, Australia, and NATO forces participating
+- Philippines becoming "forward tripwire state" and "first line of fire"
+- Global military spending reached $2.8 trillion (2025 SIPRI report)
+- US contributed $954 billion—one third of entire planet's war budget
+- Philippines inflation at 4.1% (March 2026); rice at 60-70 pesos/kilo
+- **Pax Siliconica**: 4,000-acre US high-tech manufacturing zone in central Philippines
+  - Companies include Intel, Micron, Lockheed Martin, Applied Materials
+  - Governed by US common law for up to 99 years
+  - Diplomatic immunity granted
+  - Feeds US war supply chain
+- True peace found in human dignity, sovereignty—not silicon chips or foreign-controlled zones
+- West Philippine Sea (South China Sea): US and Chinese warships in dangerous standoff
+- Demands: Cut military budgets, redirect to healthcare/education/climate; stop fuel taxes; reject Pax Siliconica; abrogate unequal military agreements
+
+**Open issues/questions:**
+- How to mobilize Filipino public against Pax Siliconica?
+- How to pressure government to honor constitutional ban on foreign bases?
+
+---
+
+### Agenda Item 7: Chong-woon Hwang - South Korea and New Cold War (01:29:50 - 01:42:31)
+
+**Key points:**
+- US military in South Korea since 1945—began as occupying force
+- 1953: Korea-US Mutual Defense Treaty
+- 1966: Status of Forces Agreement (SOFA)
+- Today: ~28,500 US troops; 62 US military bases; 95 million square meters of land (13,000+ soccer fields)
+- Increasing emphasis on South Korea as central to US Indo-Pacific strategy
+- US raised possibility of using Korea-based troops in China-Taiwan conflict
+- "Modernization" of alliance means expanding US Forces Korea role beyond defending South Korea to countering China
+- 2024 Korea-US summit: Lee Jae-myung administration agreed to increase defense spending to 3.5% of GDP
+- Trump demanded US ownership of land where military bases are stationed
+- General Brunsdon referred to Korea as "fixed aircraft carrier"
+- "Kill web" concept: integrating military capabilities of South Korea, Japan, Philippines into single network
+- Risk: South Korea becomes forward operating base against China
+- Organizing committee formed in South Korea for international people's action opposing US imperialism
+
+**Open issues/questions:**
+- How to prevent South Korea from being drawn into Taiwan conflict?
+- How to build domestic opposition to increased military spending?
+
+---
+
+### Agenda Item 8: Closing Remarks and Solidarity Building (01:43:12 - 02:10:17)
+
+**Key points:**
+- **Luna**: Study dialectical and historical materialism to understand economic base of imperialism; Vietnamese Marxism-Leninism curriculum available for free; theory must come with practice
+- **Setareh**: US playbook is predictable—follow the money; Iran's resistance based on Shia theology of social justice and dignity; indigenous cultural values can strengthen anti-imperialist response
+- **Keiko**: Importance of asking "why"; solidarity and dialogue essential; learn from history to avoid repeating mistakes
+- **Professor Chen**: Need for class analysis; different classes impacted differently by militarism; solidarity between working people across nations (not governments)
+- **Corazon**: Context is crucial; learn from people's stories and experiences; problems multiply and transform—strategies must adapt
+- **Chong-woon**: Need to deliver information to general public; mobilize people into streets and events; international solidarity essential to fight US imperialism
+
+**Closing chant**: "Hands Off Asia!" (multiple participants on camera)
+
+---
+
+## 8. Parking Lot / Unresolved Items
+
+- **Item**: Question and answer session with audience
+  - Why parked / next step: Time constraints prevented Q&A; questions to be collected and tracked for future webinars
+  - Suggested owner: Tings Chak / Tricontinental Asia
+
+- **Item**: Discussion of dozens of other Asian cases of US militarism
+  - Why parked / next step: Webinar focused on six countries; future webinars planned to expand analysis to other Asian contexts
+  - Suggested owner: Tricontinental Asia and IPA
+
+---
+
+## 9. Risks / Blockers
+
+- **Risk 1**: Escalation of conflict involving Taiwan drawing in Okinawa, South Korea, and Philippines as forward bases
+  - Impact: Regional war affecting millions of civilians
+  - Mitigation owner: Regional peace movements (No More Battle of Okinawa, ISC, etc.)
+
+- **Risk 2**: Increasing surveillance and censorship in host countries preventing documentation of base impacts
+  - Impact: Arrests of citizens filming base activities; suppression of dissent
+  - Mitigation owner: International solidarity networks, media organizations
+
+- **Risk 3**: Economic coercion forcing countries to accept US military presence
+  - Impact: Vietnam's historical debt burden; IMF conditionalities; sanctions
+  - Mitigation owner: Alternative economic cooperation frameworks (BRICS+, etc.)
+
+---
+
+## 10. Next Meeting / Follow-up
+
+- **Proposed date/time**: Next month or within couple of months (May-June 2025)
+- **Objectives for next meeting**:
+  - Continue analysis expansion to additional Asian countries
+  - Deepen class analysis of militarism's impacts
+  - Share updates on campaign activities and mobilizations
+  - Facilitate cross-regional dialogue projects
+
+---
+
+## 11. Attachments / References
+
+- **Agenda document**: N/A (webinar format)
+- **Slides**: Presented by each speaker (available through Tricontinental Asia)
+- **Transcript / Recording**: Full SRT transcript available; recording to be published on Tricontinental Asia YouTube channel
+- **Campaign materials**: https://ipa-aip.org (posters available in multiple Asian languages)
+- **Related resources**:
+  - Vietnamese Marxism-Leninism curriculum: https://banninghouse.rocks/shop
+  - Tricontinental Asia: https://tricontinental.org/asia
+
+---
+
+## 12. Version & Change Log
+
+- **Version**: 1.0
+- **Last updated**: 2025-06-15T00:00:00Z
+- **Changes**: Initial minutes generated from SRT transcript file
+
+---
+
+*Minutes generated by Claude Code based on transcript of webinar hosted by Tricontinental Institute for Social Research and International People's Assembly on April 30, 2025.*

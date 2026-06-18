@@ -1,0 +1,297 @@
+# Hands Off Asia: Peace, Sovereignty, and Resistance to Militarization Across the Region
+
+## I. Introduction: Why “Hands Off Asia” Matters Today
+
+The webinar “Hands Off Asia! Peace, Sovereignty, and Anti-US Militarism” brought together speakers from Vietnam, Iran, Okinawa, Taiwan, the Philippines, and South Korea to discuss the impact of military bases, military alliances, and foreign intervention across Asia. The event also marked the launch of the Hands Off Asia campaign, which calls for the removal of U.S. and NATO military bases from Asia, an end to aggressive military pacts, and respect for the sovereignty of Asian nations and peoples.
+
+Held on the anniversary of Vietnam’s liberation and reunification, the webinar connected historical experiences of anti-colonial struggle with contemporary concerns about militarization and geopolitical conflict. Participants examined how military infrastructure, security alliances, and ideological influence continue to shape political realities across the region.
+
+A common theme emerged throughout the discussion: the peoples of Asia have repeatedly experienced the costs of war, foreign intervention, and military occupation, and these historical experiences continue to inform contemporary movements for peace and sovereignty.
+
+---
+
+# II. From Vietnam to the Present: Lessons from Anti-Colonial Struggle
+
+## A. Vietnam’s liberation as a historical turning point
+
+Opening the discussion, Vietnamese translator and content creator Luna Nguyen reflected on the significance of April 30, 1975, when Vietnam achieved victory in its struggle against the United States and reunified the country.
+
+She described the immense human cost of the war, noting the millions of civilian and military deaths that resulted from decades of conflict. She also highlighted the continuing consequences of Agent Orange contamination, which continue to affect communities in Vietnam as well as neighboring Laos and Cambodia.
+
+For Nguyen, Vietnam’s liberation represented more than a national victory. It demonstrated that a determined people, organized around a political vision and collective struggle, could defeat a militarily superior power.
+
+## B. National sovereignty as a guiding principle
+
+Nguyen emphasized that military intervention is not limited to direct warfare. Economic pressure, diplomatic influence, and ideological campaigns can also play important roles in maintaining power and influence.
+
+Understanding these broader forms of intervention, she argued, is essential for understanding both historical and contemporary conflicts.
+
+## C. Lessons for contemporary movements
+
+Drawing lessons from Vietnam’s experience, Nguyen encouraged younger generations to study anti-war and anti-imperialist struggles not simply as historical events but as living experiences with continuing relevance.
+
+The history of Vietnam, she suggested, demonstrates the importance of political organization, historical understanding, and popular participation in defending sovereignty and independence.
+
+---
+
+# III. The Expansion of U.S. Military Power in Asia
+
+## A. The regional military architecture
+
+Throughout the webinar, speakers repeatedly referred to the extensive network of U.S. military facilities spread across Asia and the Pacific.
+
+From Okinawa and South Korea to the Philippines and beyond, military bases were described as key components of a broader regional security architecture that extends across the region.
+
+Speakers argued that these facilities are often presented as sources of security while simultaneously becoming focal points of geopolitical tension.
+
+## B. Military alliances and arms expansion
+
+Several presentations addressed the expansion of military alliances, joint military exercises, and defense cooperation agreements.
+
+Participants expressed concern about increasing military expenditures and the growing integration of regional military structures into broader strategic competition.
+
+## C. The argument against militarization
+
+A recurring argument throughout the webinar was that military expansion does not necessarily produce greater security.
+
+Instead, speakers suggested that military buildups can increase tensions, deepen regional rivalries, and expose local populations to greater risks during periods of conflict.
+
+---
+
+# IV. West Asia and the Question of Security
+
+## A. Iran under pressure
+
+Speaking from Esfahan, one of the Iranian cities affected by recent conflict, Setareh Sadeqi discussed the realities of living in a region shaped by military confrontation.
+
+She described the experience of communities that have lived under the threat of military escalation and reflected on the consequences of conflict for ordinary people.
+
+## B. Critique of U.S. military presence in West Asia
+
+Sadeqi challenged the idea that foreign military bases function as protective shields for host countries.
+
+According to her analysis, military installations often make surrounding areas potential targets during periods of conflict. She argued that recent events demonstrated how countries hosting foreign military infrastructure could become directly involved in regional confrontations.
+
+She also questioned assumptions that military dependency automatically produces stability.
+
+## C. Resistance and self-determination
+
+For Sadeqi, genuine security is linked to sovereignty and political independence rather than dependence on external military power.
+
+She emphasized the importance of indigenous approaches to security and argued that communities must develop their own capacity to determine their futures.
+
+---
+
+# V. Okinawa: Living with Military Occupation
+
+## A. Okinawa’s unique burden
+
+Keiko Yonaha presented a historical overview of Okinawa’s postwar experience.
+
+She noted that Okinawa constitutes only a small percentage of Japan’s territory while hosting the majority of U.S. military facilities in the country. This concentration of military infrastructure has made Okinawa a central site in debates about militarization and security.
+
+## B. Everyday consequences for local communities
+
+Yonaha described the long history of military occupation and the effects it has had on local communities.
+
+Her presentation addressed issues including land seizures, environmental concerns, and the broader social consequences of maintaining large military facilities in densely populated areas.
+
+She also discussed concerns about contamination and other long-term impacts associated with military activity.
+
+## C. Grassroots resistance
+
+A central theme of Yonaha’s presentation was the persistence of local resistance.
+
+For decades, community organizations, peace activists, and local residents have opposed military expansion and demanded greater control over their own future.
+
+Yonaha emphasized that opposition to militarization in Okinawa is rooted in lived experience and historical memory.
+
+---
+
+# VI. Taiwan: Militarization and Ideological Influence
+
+## A. Taiwan within regional strategic competition
+
+Professor Chen Meixian examined Taiwan’s position within contemporary geopolitical tensions.
+
+She argued that Taiwan has become deeply embedded within broader strategic competition in East Asia and that military issues cannot be separated from political and ideological developments.
+
+## B. Critiques of U.S. influence
+
+Chen focused particular attention on what she described as both military and ideological forms of influence.
+
+According to her analysis, military cooperation, arms sales, educational institutions, media systems, and other mechanisms all contribute to shaping public perceptions and political discourse.
+
+She argued that understanding these processes requires examining both military policies and the narratives that accompany them.
+
+## C. Local resistance perspectives
+
+Chen stressed the importance of critical public discussion and greater awareness of dominant security narratives.
+
+She encouraged audiences to examine the relationship between militarization, ideology, and political decision-making and to consider how these dynamics affect prospects for peace.
+
+---
+
+# VII. The Philippines: From Base Closures to Renewed Military Expansion
+
+## A. Historical struggle against foreign military bases
+
+Corazon Valdes-Fabros connected contemporary debates to the Philippines’ long history of opposition to foreign military bases.
+
+She recalled earlier campaigns that successfully led to the removal of major U.S. military facilities and described those victories as important examples of sustained popular organizing.
+
+## B. Return of military cooperation
+
+At the same time, she expressed concern about the renewed expansion of military cooperation and the increasing presence of foreign military activity in the country.
+
+She pointed to large-scale military exercises and the expansion of military facilities as indicators of a changing security environment.
+
+## C. The “tripwire state” concern
+
+Valdes-Fabros warned that countries can become entangled in conflicts generated by larger geopolitical rivalries.
+
+She argued that military positioning and alliance structures may place local populations at risk even when they are not direct participants in disputes between major powers.
+
+## D. The economic cost of militarization
+
+The discussion also addressed rising global military expenditures.
+
+Valdes-Fabros contrasted these expenditures with social needs and argued that genuine security involves access to housing, food, and human development rather than military expansion alone.
+
+---
+
+# VIII. South Korea and the Emerging “New Cold War”
+
+## A. Historical origins of the U.S. military presence
+
+Chong-woon Hwang examined the history of U.S. military deployment on the Korean Peninsula and its continuing role in regional politics.
+
+He described the extensive military infrastructure that remains in South Korea and discussed its significance within broader regional security arrangements.
+
+## B. The Korean Peninsula in contemporary geopolitics
+
+According to Hwang, the Korean Peninsula occupies a strategic position within contemporary geopolitical competition.
+
+He argued that developments on the peninsula increasingly intersect with wider regional rivalries and security frameworks.
+
+## C. Critique of the New Cold War framework
+
+A major focus of his presentation was the concept of a “new Cold War.”
+
+Hwang expressed concern that expanding military cooperation and alliance structures are contributing to bloc-based politics and intensifying confrontation across the region.
+
+## D. Alternative visions
+
+Rather than deepening military competition, Hwang advocated greater international solidarity, dialogue, and cooperation among peace movements.
+
+He argued that alternatives to confrontation can only emerge through sustained engagement among peoples across national borders.
+
+---
+
+# IX. Shared Patterns Across Asia
+
+## A. Common experiences despite national differences
+
+Although the speakers represented different countries and political contexts, several common themes emerged.
+
+Across the region, participants described experiences involving military bases, foreign intervention, strategic competition, and concerns about sovereignty.
+
+While the specific circumstances differed, many speakers viewed these issues as interconnected rather than isolated national problems.
+
+## B. Recurring themes identified by speakers
+
+### 1. Sovereignty
+
+Every presentation emphasized the importance of self-determination and the right of peoples to decide their own futures.
+
+### 2. Peace
+
+Speakers consistently argued that peace requires more than military deterrence and must be built on political solutions and mutual respect.
+
+### 3. Solidarity
+
+International cooperation among peace movements emerged as a major theme throughout the discussion.
+
+### 4. Historical memory
+
+Many participants stressed that contemporary debates cannot be understood without reference to histories of war, colonialism, and liberation.
+
+### 5. Dialogue
+
+Several speakers emphasized dialogue and public education as essential tools for reducing conflict and building understanding.
+
+---
+
+# X. Women at the Forefront of Anti-War Movements
+
+## A. The significance of an all-women panel
+
+The webinar featured an all-women panel representing different parts of Asia.
+
+Organizers highlighted the historical role women have played in anti-war and peace movements throughout the region.
+
+## B. Historical examples
+
+References were made to earlier generations of women activists, including organizations and movements that opposed war and promoted peace throughout the twentieth century.
+
+The experiences of Okinawan women and mothers were cited as examples of long-standing grassroots resistance.
+
+## C. Contemporary leadership
+
+The speakers themselves reflected the continuing importance of women’s leadership in campaigns against militarization and foreign military presence.
+
+Their contributions demonstrated the central role women continue to play in organizing, education, and international solidarity efforts.
+
+---
+
+# XI. Launching the “Hands Off Asia” Campaign
+
+## A. Core demands
+
+The webinar formally supported the launch of the Hands Off Asia campaign.
+
+Its principal demands include:
+
+### 1. Removal of U.S. and NATO military bases from Asia
+
+### 2. End to aggressive military alliances and pacts
+
+### 3. Respect for national sovereignty and self-determination
+
+### 4. Promotion of peace, cooperation, and solidarity across the region
+
+## B. Building a regional movement
+
+Participants emphasized the need for public education, outreach, and collaboration among organizations throughout Asia.
+
+The campaign aims to connect local struggles while encouraging broader regional cooperation.
+
+## C. Long-term goals
+
+Speakers described the launch not as a single event but as the beginning of a longer process of movement building.
+
+Future discussions, educational activities, and campaigns were presented as important steps in strengthening regional anti-war networks.
+
+---
+
+# XII. Conclusion: Independence, Freedom, and Regional Solidarity
+
+## A. Asia at a crossroads
+
+The webinar presented Asia as a region facing important choices about security, sovereignty, and development.
+
+Speakers expressed concern about expanding militarization while also highlighting ongoing efforts to build alternatives based on peace and cooperation.
+
+## B. Main message of the webinar
+
+Despite differences in national context, participants shared a common view that military expansion, foreign bases, and escalating geopolitical rivalry pose serious challenges to peace and sovereignty.
+
+They argued that these challenges require collective responses grounded in historical understanding and popular participation.
+
+## C. Final reflection
+
+The discussion concluded with a call for continued organizing, education, and international solidarity.
+
+Drawing on experiences from Vietnam, Iran, Okinawa, Taiwan, the Philippines, and South Korea, the webinar framed the struggle for peace as inseparable from the defense of sovereignty, self-determination, and regional cooperation.
+
+Under the banner of “Hands Off Asia,” participants expressed a shared commitment to continuing those efforts in the years ahead.
